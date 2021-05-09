@@ -1,3 +1,9 @@
-x = int(input())
-for i in range(-(x-1), x):
-    print(' ' * (abs(i)) + '*' * ((x-abs(i))*2-1))
+# 1. 출력 줄을 확인한다.
+# 2. 별의 개수를 확인한다.
+# 2-1. 반복문의 변수(i)를 조정한다.
+# 2-2. 별의 개수를 출력한다.
+# 3. 빈칸을 출력한다.
+
+n = int(input())
+for i in range(-n+1,n):
+    print('*' * (n - abs(i)))
